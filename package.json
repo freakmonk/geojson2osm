@@ -11,8 +11,8 @@
     "url": "git+https://github.com/freakmonk/geojson2osm.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "LICENSE",
+  "author": "freakmonk",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/freakmonk/geojson2osm/issues"
   },
