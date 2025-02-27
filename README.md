@@ -33,11 +33,8 @@ The tool is designed to be memory-efficient by processing large GeoJSON files in
 
 3.  **Install Dependencies:**
     ```bash
-    npm install proj4 commander
-    ```
-    Or if you have yarn:
-    ```bash
-    yarn add proj4 commander
+    npm init -y
+    npm install
     ```
 
 ## Usage

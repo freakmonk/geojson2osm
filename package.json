@@ -1,0 +1,24 @@
+{
+  "name": "geojson2osm",
+  "version": "1.0.0",
+  "description": "A command-line tool to convert GeoJSON files to OSM (OpenStreetMap) XML format, with support for coordinate system (CRS) transformations for BIG geodata files.",
+  "main": "geojson2osm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freakmonk/geojson2osm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "LICENSE",
+  "bugs": {
+    "url": "https://github.com/freakmonk/geojson2osm/issues"
+  },
+  "homepage": "https://github.com/freakmonk/geojson2osm#readme",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "proj4": "^2.15.0"
+  }
+}
