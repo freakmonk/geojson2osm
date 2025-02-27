@@ -48,7 +48,8 @@ node geojson2osm.js -i input.geojson -o output.osm -s EPSG:3857 -t EPSG:4326
 
 ```bash
 npm install -g pkg
-
-pkg geojson2osm.js -o geojson2osm --target [node18-macos-arm64/node18-macos-x64/node18-linux-arm64/node18-linux-x64/node18-windows-x64]
+pkg geojson2osm.js -o geojson2osm --target node18-macos-arm64
+#or node18-macos-x64/node18-windows-x64
+#or node18-linux-arm64/node18-linux-x64
 
 ```
