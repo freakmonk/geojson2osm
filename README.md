@@ -27,7 +27,7 @@ The tool is designed to be memory-efficient by processing large GeoJSON files in
 2.  **Clone the repository (or download the script directly):**
 
     ```bash
-    git clone <repository-url> # Replace <repository-url> with the actual repository URL if available
+    git clone https://github.com/freakmonk/geojson2osm.git
     cd geojson2osm
     ```
 
