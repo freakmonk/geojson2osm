@@ -2,7 +2,7 @@
 
 A command-line tool to convert GeoJSON files to OSM (OpenStreetMap) XML format, with support for coordinate system (CRS) transformations for BIG geodata files.
 
-Its generate 12 Gb osm file from 6 Gb geojson file in 120 seconds on macbook air m1.
+It converts a 6GB GeoJSON file into a 12GB OSM file in 120 seconds on a MacBook Air M1.
 
 ## Description
 
