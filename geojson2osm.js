@@ -259,7 +259,7 @@ async function main() {
   }
 
   const osmIdCounter = { node: -1, way: -1 };
-  const osmHeader = `<?xml version="1.0" encoding="UTF-8"?>\n<osm version="0.6" generator="geojson-to-osm">\n`;
+  const osmHeader = `<?xml version="1.0" encoding="UTF-8"?>\n<osm version="0.6" generator="geojson2osm">\n`;
   const osmFooter = "\n</osm>";
 
   // Use createWriteStream for streaming
