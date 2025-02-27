@@ -16,7 +16,7 @@ const DEFAULT_TARGET_CRS = "EPSG:4326"; // Target CRS remains EPSG:4326
 program
   .name("geojson2osm")
   .description("Convert GeoJSON to OSM XML")
-  .version("1.0.0")
+  .version("0.2.0")
   .option(
     "-i, --input <file>",
     "Input GeoJSON file path",
