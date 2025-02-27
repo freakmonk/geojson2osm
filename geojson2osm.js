@@ -1,3 +1,12 @@
+/**
+ * geojson2osm
+ *
+ * Copyright (c) 2023, Freakmonk <admin@salviadorium.pp.ua>
+ *
+ * GNU GENERAL PUBLIC LICENSE
+ *
+ */
+
 const fs = require("fs");
 const { performance } = require("perf_hooks");
 const { program } = require("commander");
