@@ -1,9 +1,9 @@
 /**
  * geojson2osm
  *
- * Copyright (c) 2023, Freakmonk <admin@salviadorium.pp.ua>
+ * Copyright (c) 2025 [freakmonk](https://salviadorium.pp.ua/)
  *
- * GNU GENERAL PUBLIC LICENSE
+ * MIT License
  *
  */
 
