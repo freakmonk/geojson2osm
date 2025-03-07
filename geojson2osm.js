@@ -208,8 +208,30 @@ function geojsonFeatureToOsm(feature, osmIdCounter, sourceCRS, targetCRS) {
       );
       osmIdCounter.way--;
     }
+  } else if (feature.geometry.type === "MultiLineString") {
+    for (const lineStringCoordinates of feature.geometry.coordinates) {
+      const wayNodes = [];
+      for (const coord of lineStringCoordinates) {
+        const convertedCoordinates = convertCoordinates(
+          coord,
+          sourceCRS,
+          targetCRS
+        );
+        osmElements.push(
+          `<node id="${osmIdCounter.node}" lat="${convertedCoordinates[1]}" lon="${convertedCoordinates[0]}"/>`
+        );
+        wayNodes.push(`<nd ref="${osmIdCounter.node}"/>`);
+        osmIdCounter.node--;
+      }
+      osmElements.push(
+        `<way id="${osmIdCounter.way}">${wayNodes.join("")}${tags.join(
+          ""
+        )}</way>`
+      );
+      osmIdCounter.way--;
+    }
   }
-  // ... (Add more geometry types as needed: MultiLineString, MultiPoint, GeometryCollection)
+  // ... (Add more geometry types as needed: MultiPoint, GeometryCollection)
 
   return osmElements.join("");
 }
@@ -231,7 +253,8 @@ function processGeoJSON(geojson, osmIdCounter, osmWriteStream) {
     geojson.type === "Point" ||
     geojson.type === "LineString" ||
     geojson.type === "Polygon" ||
-    geojson.type === "MultiPolygon"
+    geojson.type === "MultiPolygon" ||
+    geojson.type === "MultiLineString"
   ) {
     features = [{ geometry: geojson, type: "Feature", properties: {} }];
   } else {
